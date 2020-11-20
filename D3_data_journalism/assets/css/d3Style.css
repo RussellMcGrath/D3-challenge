@@ -57,6 +57,12 @@ h1 {
   margin: 0;
 }
 
+.title {
+  text-align: center;
+  text-anchor: middle;
+  font-size: 25px;
+}
+
 .d3-tip {
   padding: 6px;
   font-size: 12px;

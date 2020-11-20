@@ -3,7 +3,7 @@ var svgWidth = 960;
 var svgHeight = 500;
 // define chart margins
 var margin = {
-  top: 20,
+  top: 50,
   right: 40,
   bottom: 100,
   left: 100
@@ -193,6 +193,13 @@ d3.csv("assets/data/data.csv").then( data => {
         .attr("y", d=>yLinearScale(d[chosenYAxis]))
         .attr("dy", ".4em")
         .text(d => d.abbr)
+
+    // Create chart title
+    var titleGroup = chartGroup.append("g")
+    .attr("transform", `translate(${width / 2}, -10)`)
+        .append("text")
+        .classed("title", true)
+        .text("Health Risks per Demographic (State Level)")
 
     // Create group for x-axis labels
     var xLabelsGroup = chartGroup.append("g")
