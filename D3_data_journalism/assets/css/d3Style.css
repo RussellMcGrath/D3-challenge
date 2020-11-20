@@ -4,6 +4,23 @@
   text-anchor: middle;
 }
 
+h1 {
+  margin: 0px;
+}
+
+.headrow {
+  display: inline;
+  background-color: lightgray;
+}
+
+.headrow img {
+  height: 50%;
+  width: 5%;
+  display: inline;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
 .active {
   font-weight: bold;
   fill: #000;
@@ -40,7 +57,7 @@
   margin: 0;
 }
 
-.tooltip {
+.d3-tip {
   padding: 6px;
   font-size: 12px;
   line-height: 1;
